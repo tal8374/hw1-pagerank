@@ -4,7 +4,8 @@ class Node:
         self.int_id = int(id)
         self.str_id = id
         self.temp_rank = None
-        self.old_rank = 0
+        self.old_rank = None
+        self.prev_rank = None
 
     def __str__(self):
         return 'id: ' + self.str_id + '  - rank: ' + str(self.old_rank) + ' - tmp rank: ' + str(self.temp_rank)
